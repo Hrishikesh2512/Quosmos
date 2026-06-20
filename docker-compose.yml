@@ -1,4 +1,4 @@
-# Quosmos full-stack — one command to run frontend + Qiskit backend.
+# Quosmos full-stack - one command to run frontend + Qiskit backend.
 #   docker compose up --build
 # Then open http://localhost:8080
 services:

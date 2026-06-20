@@ -28,7 +28,7 @@ pip install -r requirements.txt && uvicorn app.main:app --reload
 
 ## The quantum engine (TypeScript)
 
-Everything quantum lives in `frontend/src/quantum/` and is **pure** — no React, no DOM. That makes it trivially testable.
+Everything quantum lives in `frontend/src/quantum/` and is **pure** - no React, no DOM. That makes it trivially testable.
 
 ### Adding a single-qubit gate
 
@@ -70,7 +70,7 @@ Modules are self-contained and may keep local state or read from the shared stor
 
 ## Backend endpoints
 
-Add a router under `backend/app/routers/`, include it in `main.py`, and define request/response models in `models.py`. Keep the `Circuit` schema in sync with the TS type — this is the contract that lets the browser and Qiskit agree.
+Add a router under `backend/app/routers/`, include it in `main.py`, and define request/response models in `models.py`. Keep the `Circuit` schema in sync with the TS type - this is the contract that lets the browser and Qiskit agree.
 
 ## Styling
 
@@ -87,7 +87,7 @@ Run `npm run coverage` and `pytest` before opening a PR.
 ## Conventions
 
 - TypeScript `strict` mode; no unused locals/params.
-- Immutable quantum values — return new objects, never mutate.
+- Immutable quantum values - return new objects, never mutate.
 - Little-endian qubit ordering everywhere.
 - Keep the TS and Python engines behaviourally identical.
 

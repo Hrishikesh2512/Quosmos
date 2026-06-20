@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Quosmos — visual interactive quantum computing platform (frontend)",
+  "description": "Quosmos - visual interactive quantum computing platform (frontend)",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

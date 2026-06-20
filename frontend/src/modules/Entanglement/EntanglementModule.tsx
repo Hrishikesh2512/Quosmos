@@ -61,7 +61,7 @@ export function EntanglementModule() {
 
         <Panel title="What this means">
           <p className="text-sm leading-relaxed text-slate-300">
-            Each qubit alone is completely random — 50/50. Yet their outcomes are perfectly linked.
+            Each qubit alone is completely random - 50/50. Yet their outcomes are perfectly linked.
             Measuring one instantly fixes the statistics of the other. This correlation is the
             resource behind teleportation and superdense coding.
           </p>

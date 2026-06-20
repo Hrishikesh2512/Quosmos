@@ -4,10 +4,10 @@ Thanks for your interest in improving Quosmos! This project aims to be the best 
 
 ## Ways to contribute
 
-- 🐛 **Bug reports** — open an issue with steps to reproduce, expected vs actual behaviour, and your OS/browser.
-- ✨ **Features** — new modules, gates, visualizations, challenges, or tutor content.
-- 📚 **Docs** — clarifications, examples, translations.
-- 🧪 **Tests** — more quantum-correctness coverage is always valuable.
+- 🐛 **Bug reports** - open an issue with steps to reproduce, expected vs actual behaviour, and your OS/browser.
+- ✨ **Features** - new modules, gates, visualizations, challenges, or tutor content.
+- 📚 **Docs** - clarifications, examples, translations.
+- 🧪 **Tests** - more quantum-correctness coverage is always valuable.
 
 ## Workflow
 
@@ -44,12 +44,12 @@ All must pass. PRs are expected to keep coverage at or above the current level (
 
 ## Adding content
 
-- **Challenges** live in `frontend/src/content/challenges.ts` — provide a validator that checks the statevector (up to global phase), a brief, a goal and graduated hints.
+- **Challenges** live in `frontend/src/content/challenges.ts` - provide a validator that checks the statevector (up to global phase), a brief, a goal and graduated hints.
 - **Tutor topics** live in `frontend/src/content/tutor.ts` and mirror in `backend/app/tutor_kb.py`.
 
 ## Review
 
-A maintainer will review for correctness, clarity, test coverage and design consistency. We may suggest changes — that's normal and collaborative. Once approved and green, your PR is merged.
+A maintainer will review for correctness, clarity, test coverage and design consistency. We may suggest changes - that's normal and collaborative. Once approved and green, your PR is merged.
 
 ## Code of Conduct
 

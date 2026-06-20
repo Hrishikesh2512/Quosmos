@@ -55,7 +55,7 @@ export function runShor(N: number, a: number): ShorResult {
       period: 0,
       factors: [g, N / g],
       sequence: [],
-      steps: [`gcd(${a}, ${N}) = ${g} ≠ 1 — lucky guess gives factors directly.`],
+      steps: [`gcd(${a}, ${N}) = ${g} ≠ 1 - lucky guess gives factors directly.`],
     };
   }
   const period = findPeriod(a, N);
@@ -74,10 +74,10 @@ export function runShor(N: number, a: number): ShorResult {
       if (f1 > 1 && f1 < N) factors = [f1, N / f1];
       else if (f2 > 1 && f2 < N) factors = [f2, N / f2];
     } else {
-      steps.push(`a^{r/2} ≡ -1 (mod N) — failure, retry with a different a.`);
+      steps.push(`a^{r/2} ≡ -1 (mod N) - failure, retry with a different a.`);
     }
   } else {
-    steps.push(`Period r = ${period} is odd — retry with a different a.`);
+    steps.push(`Period r = ${period} is odd - retry with a different a.`);
   }
   if (factors) steps.push(`Factors of ${N}: ${factors[0]} × ${factors[1]}.`);
   return { N, a, period, factors, sequence, steps };

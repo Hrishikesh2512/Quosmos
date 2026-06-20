@@ -7,11 +7,11 @@ import { StateVector } from '@/quantum/statevector';
 import { GATES } from '@/quantum/gates';
 
 const STEPS: Step[] = [
-  { title: 'Share a Bell pair', detail: 'A referee distributes |Φ⁺⟩ — qubit 0 to Alice, qubit 1 to Bob.' },
+  { title: 'Share a Bell pair', detail: 'A referee distributes |Φ⁺⟩ - qubit 0 to Alice, qubit 1 to Bob.' },
   { title: 'Choose a message', detail: 'Alice picks two classical bits to send: 00, 01, 10 or 11.' },
   { title: 'Encode', detail: 'Alice applies I, X, Z or ZX to her qubit only.' },
   { title: 'Send the qubit', detail: 'Alice ships her single qubit to Bob.' },
-  { title: 'Decode', detail: 'Bob undoes the Bell circuit and measures — recovering both bits.' },
+  { title: 'Decode', detail: 'Bob undoes the Bell circuit and measures - recovering both bits.' },
 ];
 
 const ENCODINGS = ['I', 'X', 'Z', 'ZX'];

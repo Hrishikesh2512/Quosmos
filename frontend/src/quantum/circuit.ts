@@ -27,7 +27,7 @@ export function emptyCircuit(numQubits = 2): Circuit {
   return { numQubits, ops: [] };
 }
 
-/** Ops sorted by column then leading qubit — execution order. */
+/** Ops sorted by column then leading qubit - execution order. */
 export function orderedOps(circuit: Circuit): CircuitOp[] {
   return [...circuit.ops].sort((a, b) =>
     a.column !== b.column ? a.column - b.column : a.qubits[0] - b.qubits[0],
@@ -77,7 +77,7 @@ export function simulate(circuit: Circuit, rng: () => number = Math.random): Sim
 }
 
 /**
- * Compute the statevector ignoring measurement ops — the pure unitary state.
+ * Compute the statevector ignoring measurement ops - the pure unitary state.
  * Useful for the Bloch/statevector panels which want the coherent state.
  */
 export function statevectorOf(circuit: Circuit): StateVector {

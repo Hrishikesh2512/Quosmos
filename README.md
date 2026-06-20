@@ -4,7 +4,7 @@
 
 Quosmos turns abstract quantum mechanics into something you can **see, touch, and play with**: a 3D Bloch sphere you can rotate, a drag-and-drop circuit builder, animated teleportation and superdense-coding walkthroughs, a double-slit lab, an algorithms gallery, gamified challenges, and an integrated tutor.
 
-It feels like Figma + Notion + high-end scientific software — built as an open-source learning environment for everyone from the curious beginner to the working researcher.
+It feels like Figma + Notion + high-end scientific software - built as an open-source learning environment for everyone from the curious beginner to the working researcher.
 
 ![Quosmos](docs/assets/hero.svg)
 
@@ -14,16 +14,16 @@ It feels like Figma + Notion + high-end scientific software — built as an open
 
 **Everything is visual.** Whenever a concept can be animated, it is animated. Whenever a concept can be drawn, it is drawn. Text is the fallback, not the default.
 
-- 🪐 **Bloch Sphere Explorer** — interactive 3D single-qubit state with animated gate application.
-- 🎛️ **Qubit Sandbox** — sculpt arbitrary states by θ/φ and watch every representation update live.
-- 🧩 **Circuit Builder** — drag-and-drop multi-qubit circuits, live statevector, QASM/Qiskit export & import.
-- 🔗 **Entanglement Lab** — Bell states, EPR pairs, live correlation statistics.
-- 📡 **Superdense Coding** — send 2 classical bits with 1 qubit, step by step.
-- ✨ **Teleportation** — animated source → Bell pair → measurement → reconstruction.
-- 🌊 **Double-Slit Lab** — wave/particle duality with observation-induced collapse.
-- 🧠 **Algorithms Gallery** — Deutsch–Jozsa, Grover, QFT, Shor visualization.
-- 🎓 **Quantum Tutor** — contextual explanations for the active module.
-- 🏆 **Challenges** — gamified exercises with hints, validation, and progress tracking.
+- 🪐 **Bloch Sphere Explorer** - interactive 3D single-qubit state with animated gate application.
+- 🎛️ **Qubit Sandbox** - sculpt arbitrary states by θ/φ and watch every representation update live.
+- 🧩 **Circuit Builder** - drag-and-drop multi-qubit circuits, live statevector, QASM/Qiskit export & import.
+- 🔗 **Entanglement Lab** - Bell states, EPR pairs, live correlation statistics.
+- 📡 **Superdense Coding** - send 2 classical bits with 1 qubit, step by step.
+- ✨ **Teleportation** - animated source → Bell pair → measurement → reconstruction.
+- 🌊 **Double-Slit Lab** - wave/particle duality with observation-induced collapse.
+- 🧠 **Algorithms Gallery** - Deutsch–Jozsa, Grover, QFT, Shor visualization.
+- 🎓 **Quantum Tutor** - contextual explanations for the active module.
+- 🏆 **Challenges** - gamified exercises with hints, validation, and progress tracking.
 
 ## Tech stack
 
@@ -37,7 +37,7 @@ It feels like Figma + Notion + high-end scientific software — built as an open
 
 ## Quick start
 
-### Option A — Docker (full stack, one command)
+### Option A - Docker (full stack, one command)
 
 ```bash
 docker compose up --build      # then open http://localhost:8080
@@ -45,7 +45,7 @@ docker compose up --build      # then open http://localhost:8080
 
 This builds and runs the nginx-served frontend (port 8080) and the Qiskit backend (port 8000), wired together automatically.
 
-### Option B — local dev
+### Option B - local dev
 
 ```bash
 # 1. Frontend
@@ -53,7 +53,7 @@ cd frontend
 npm install
 npm run dev            # http://localhost:5173
 
-# 2. Backend (optional — app runs standalone without it)
+# 2. Backend (optional - app runs standalone without it)
 cd backend
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -65,9 +65,9 @@ The frontend is fully functional on its own thanks to the built-in TypeScript qu
 
 ## Deployment
 
-- **Docker Compose** — `docker compose up --build` runs the whole stack (see `docker-compose.yml`).
-- **Frontend static hosting** — deploy `frontend/` to Vercel (config in `frontend/vercel.json`) or any static host. The app runs standalone on its built-in engine; point it at a backend by serving the API under `/api`.
-- **Backend** — the `backend/Dockerfile` produces a self-contained Qiskit API image.
+- **Docker Compose** - `docker compose up --build` runs the whole stack (see `docker-compose.yml`).
+- **Frontend static hosting** - deploy `frontend/` to Vercel (config in `frontend/vercel.json`) or any static host. The app runs standalone on its built-in engine; point it at a backend by serving the API under `/api`.
+- **Backend** - the `backend/Dockerfile` produces a self-contained Qiskit API image.
 
 ## Documentation
 
@@ -86,4 +86,4 @@ cd backend  && pytest              # PyTest
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).

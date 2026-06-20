@@ -10,7 +10,7 @@ import { Complex } from '@/quantum/complex';
 
 const STEPS: Step[] = [
   { title: 'Prepare source', detail: 'Alice holds an unknown qubit |ψ⟩ on wire 0.' },
-  { title: 'Create Bell pair', detail: 'Entangle wires 1 and 2 with H then CX — Alice keeps 1, Bob keeps 2.' },
+  { title: 'Create Bell pair', detail: 'Entangle wires 1 and 2 with H then CX - Alice keeps 1, Bob keeps 2.' },
   { title: 'Bell measurement', detail: 'Alice applies CX(0→1), H(0), then measures wires 0 and 1.' },
   { title: 'Classical send', detail: 'Alice sends the two measured bits to Bob over a classical channel.' },
   { title: 'Reconstruct', detail: 'Bob applies X^{m1} then Z^{m0}. His qubit is now exactly |ψ⟩.' },
@@ -37,7 +37,7 @@ function teleport(alpha: Complex, beta: Complex, forced: [0 | 1, 0 | 1]): Telepo
   if (r1.outcome === 1) post = post.applySingle(GATES.X, 2);
   if (r0.outcome === 1) post = post.applySingle(GATES.Z, 2);
 
-  // Extract qubit 2's reduced (pure) state — it is now unentangled.
+  // Extract qubit 2's reduced (pure) state - it is now unentangled.
   let a2 = Complex.ZERO;
   let b2 = Complex.ZERO;
   for (let i = 0; i < 8; i++) {
@@ -105,9 +105,9 @@ export function TeleportationModule() {
 
         <Panel title="Classical bits & fidelity">
           <div className="grid grid-cols-3 gap-2">
-            <Stat label="m₀" value={step >= 2 ? run.m0 : '—'} accent="text-quantum-cyan" />
-            <Stat label="m₁" value={step >= 2 ? run.m1 : '—'} accent="text-quantum-violet" />
-            <Stat label="Fidelity" value={step >= 4 ? fidelity.toFixed(3) : '—'} accent="text-quantum-emerald" />
+            <Stat label="m₀" value={step >= 2 ? run.m0 : '-'} accent="text-quantum-cyan" />
+            <Stat label="m₁" value={step >= 2 ? run.m1 : '-'} accent="text-quantum-violet" />
+            <Stat label="Fidelity" value={step >= 4 ? fidelity.toFixed(3) : '-'} accent="text-quantum-emerald" />
           </div>
           <p className="mt-3 text-xs text-slate-400">
             Bob’s correction is{' '}

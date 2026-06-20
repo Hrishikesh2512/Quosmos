@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "quosmos-backend"
 version = "1.0.0"
-description = "Quosmos backend — FastAPI + Qiskit quantum engine"
+description = "Quosmos backend - FastAPI + Qiskit quantum engine"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

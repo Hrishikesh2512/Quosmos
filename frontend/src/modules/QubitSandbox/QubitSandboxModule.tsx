@@ -25,7 +25,7 @@ export function QubitSandboxModule() {
 
   return (
     <div className="grid h-full grid-cols-1 gap-4 xl:grid-cols-[1.4fr_1fr]">
-      <Panel title="Live State" subtitle="Adjust θ and φ — everything updates in real time" className="min-h-[420px]">
+      <Panel title="Live State" subtitle="Adjust θ and φ - everything updates in real time" className="min-h-[420px]">
         <div className="h-[460px] overflow-hidden rounded-xl">
           <BlochScene vector={bloch} />
         </div>
@@ -52,7 +52,7 @@ export function QubitSandboxModule() {
         <Panel title="Angles">
           <div className="space-y-4">
             <Slider
-              label="θ — polar (|0⟩ ↔ |1⟩)"
+              label="θ - polar (|0⟩ ↔ |1⟩)"
               value={theta}
               min={0}
               max={Math.PI}
@@ -60,7 +60,7 @@ export function QubitSandboxModule() {
               onChange={setTheta}
             />
             <Slider
-              label="φ — azimuth (phase)"
+              label="φ - azimuth (phase)"
               value={phi}
               min={0}
               max={Math.PI * 2}

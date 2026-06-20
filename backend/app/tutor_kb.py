@@ -11,7 +11,7 @@ KB: dict[str, dict] = {
         "summary": "Every pure single-qubit state is a point on the Bloch sphere. Poles are |0> and |1>; the equator holds equal superpositions distinguished by phase.",
         "faqs": {
             "phase": "Phase rotates the state around the Z axis. It does not change Z-basis probabilities but matters for interference.",
-            "hadamard": "The Hadamard sends |0> to the +X pole — an equal superposition.",
+            "hadamard": "The Hadamard sends |0> to the +X pole - an equal superposition.",
             "rotation": "RX, RY and RZ rotate the state vector by an arbitrary angle about their axis.",
         },
     },
@@ -25,7 +25,7 @@ KB: dict[str, dict] = {
     "entanglement": {
         "summary": "Entangled qubits share correlations stronger than anything classical. The four Bell states form a maximally-entangled basis.",
         "faqs": {
-            "bell": "A Bell state is H on the first qubit followed by CNOT — perfectly correlated outcomes.",
+            "bell": "A Bell state is H on the first qubit followed by CNOT - perfectly correlated outcomes.",
             "correlation": "In |Phi+>, both qubits always agree in the Z basis: 00 or 11, never 01 or 10.",
         },
     },
@@ -48,7 +48,7 @@ KB: dict[str, dict] = {
 def explain(module: str, question: str) -> str:
     entry = KB.get(module)
     if not entry:
-        return "Open a module to get a contextual explanation. Try the interactive controls — every change updates the math and visuals live."
+        return "Open a module to get a contextual explanation. Try the interactive controls - every change updates the math and visuals live."
     q = question.lower()
     for key, answer in entry["faqs"].items():
         if key in q or any(w in answer.lower() for w in q.split() if len(w) > 4):

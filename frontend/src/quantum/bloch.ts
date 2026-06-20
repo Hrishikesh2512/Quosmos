@@ -61,7 +61,7 @@ export function qubitProbabilities(q: SingleQubit): { p0: number; p1: number } {
 }
 
 /**
- * Spherical-linear interpolation between two Bloch vectors — used to animate
+ * Spherical-linear interpolation between two Bloch vectors - used to animate
  * a state-vector rotation smoothly along the sphere surface.
  */
 export function slerpBloch(a: BlochVector, b: BlochVector, t: number): BlochVector {

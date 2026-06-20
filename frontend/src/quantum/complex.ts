@@ -43,7 +43,7 @@ export class Complex {
     return new Complex(this.re, -this.im);
   }
 
-  /** Squared magnitude |z|^2 — the measurement probability weight. */
+  /** Squared magnitude |z|^2 - the measurement probability weight. */
   abs2(): number {
     return this.re * this.re + this.im * this.im;
   }

@@ -33,7 +33,7 @@ export function TutorPanel() {
         );
         setAnswer(
           hit?.a ??
-            `Here's the key idea for ${content.title}: ${content.summary} Try the interactive controls on the left — every change updates the math and visuals live.`,
+            `Here's the key idea for ${content.title}: ${content.summary} Try the interactive controls on the left - every change updates the math and visuals live.`,
         );
       }
     } finally {

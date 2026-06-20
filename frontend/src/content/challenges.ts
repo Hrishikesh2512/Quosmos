@@ -83,7 +83,7 @@ export const CHALLENGES: Challenge[] = [
     id: 'ghz',
     title: 'Build a GHZ state',
     difficulty: 'intermediate',
-    brief: 'Create a three-qubit GHZ state — maximal multipartite entanglement.',
+    brief: 'Create a three-qubit GHZ state - maximal multipartite entanglement.',
     goal: 'Reach (|000⟩ + |111⟩)/√2.',
     numQubits: 3,
     hints: ['Hadamard on qubit 0.', 'Chain two CNOTs: 0→1 then 1→2.'],

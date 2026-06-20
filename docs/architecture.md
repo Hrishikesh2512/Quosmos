@@ -26,9 +26,9 @@ Quosmos is a monorepo with two independent runtimes joined by a thin JSON API.
 
 The frontend ships its **own statevector simulator in TypeScript** (`frontend/src/quantum/`). This is deliberate:
 
-1. **Zero latency** — applying a gate or dragging a slider recomputes instantly, which is essential for animation-heavy, exploratory UX.
-2. **Offline-first** — the entire app works with no server.
-3. **Correctness oracle** — the Python/Qiskit engine mirrors the same circuit schema and gate conventions (little-endian qubit ordering), so any TS result can be cross-checked against Qiskit. Tests on both sides assert identical behaviour.
+1. **Zero latency** - applying a gate or dragging a slider recomputes instantly, which is essential for animation-heavy, exploratory UX.
+2. **Offline-first** - the entire app works with no server.
+3. **Correctness oracle** - the Python/Qiskit engine mirrors the same circuit schema and gate conventions (little-endian qubit ordering), so any TS result can be cross-checked against Qiskit. Tests on both sides assert identical behaviour.
 
 The backend is therefore *optional enrichment*, not a hard dependency.
 

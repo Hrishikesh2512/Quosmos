@@ -1,4 +1,4 @@
-"""Algorithm endpoints — build, simulate and return Qiskit-verified results."""
+"""Algorithm endpoints - build, simulate and return Qiskit-verified results."""
 from __future__ import annotations
 
 import numpy as np

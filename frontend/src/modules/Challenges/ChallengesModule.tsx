@@ -147,7 +147,7 @@ export function ChallengesModule() {
           )}
           {status === 'fail' && (
             <span className="chip animate-fade-in border-quantum-magenta/40 text-quantum-magenta">
-              Not yet — check the target state.
+              Not yet - check the target state.
             </span>
           )}
         </div>

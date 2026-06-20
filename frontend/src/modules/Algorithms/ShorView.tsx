@@ -43,7 +43,7 @@ export function ShorView() {
         />
         <div className="mt-3 grid grid-cols-3 gap-2">
           <Stat label="N" value={N} accent="text-quantum-cyan" />
-          <Stat label="Period r" value={result.period || '—'} accent="text-quantum-violet" />
+          <Stat label="Period r" value={result.period || '-'} accent="text-quantum-violet" />
           <Stat
             label="Factors"
             value={result.factors ? `${result.factors[0]}×${result.factors[1]}` : 'retry'}

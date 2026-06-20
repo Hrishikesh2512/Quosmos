@@ -17,13 +17,13 @@ export const TUTOR_CONTENT: Record<ModuleId, TutorContent> = {
     keyMath: '|\\psi\\rangle = \\cos\\tfrac{\\theta}{2}\\,|0\\rangle + e^{i\\phi}\\sin\\tfrac{\\theta}{2}\\,|1\\rangle',
     points: [
       'θ (polar angle) controls the |0⟩ vs |1⟩ probability.',
-      'φ (azimuth) is the relative phase — invisible to a Z-measurement.',
+      'φ (azimuth) is the relative phase - invisible to a Z-measurement.',
       'X, Y, Z gates are 180° rotations about their axes.',
       'Rotation gates RX, RY, RZ rotate by an arbitrary angle.',
     ],
     faqs: [
       { q: 'phase', a: 'Phase φ rotates the state around the Z axis. It does not change measurement probabilities in the computational basis, but it matters for interference once you apply more gates.' },
-      { q: 'hadamard', a: 'The Hadamard takes |0⟩ to the +X pole — an equal superposition. On the Bloch sphere it is a 180° rotation about the diagonal X+Z axis.' },
+      { q: 'hadamard', a: 'The Hadamard takes |0⟩ to the +X pole - an equal superposition. On the Bloch sphere it is a 180° rotation about the diagonal X+Z axis.' },
     ],
   },
   sandbox: {
@@ -63,7 +63,7 @@ export const TUTOR_CONTENT: Record<ModuleId, TutorContent> = {
     points: [
       'The four Bell states form a maximally-entangled basis.',
       'Local measurements are random but perfectly correlated.',
-      'No information travels faster than light — only correlations.',
+      'No information travels faster than light - only correlations.',
     ],
     faqs: [
       { q: 'bell', a: 'A Bell state is created with a Hadamard followed by a CNOT. The two qubits become perfectly correlated.' },
@@ -87,7 +87,7 @@ export const TUTOR_CONTENT: Record<ModuleId, TutorContent> = {
   teleportation: {
     title: 'Quantum Teleportation',
     summary:
-      'An unknown qubit state is transferred from Alice to Bob using a shared Bell pair and two classical bits — the original is destroyed by measurement.',
+      'An unknown qubit state is transferred from Alice to Bob using a shared Bell pair and two classical bits - the original is destroyed by measurement.',
     keyMath: '|\\psi\\rangle\\,|\\Phi^+\\rangle \\to \\text{(measure)} \\to X^{m_2}Z^{m_1}|\\psi\\rangle',
     points: [
       'No cloning: the source qubit is consumed.',
@@ -101,7 +101,7 @@ export const TUTOR_CONTENT: Record<ModuleId, TutorContent> = {
   'double-slit': {
     title: 'Wave–Particle Duality',
     summary:
-      'Single particles build up an interference pattern over time — yet each lands as a point. Observing which slit they pass through destroys the interference.',
+      'Single particles build up an interference pattern over time - yet each lands as a point. Observing which slit they pass through destroys the interference.',
     keyMath: 'I(y) \\propto \\cos^2\\!\\left(\\frac{\\pi d \\sin\\theta}{\\lambda}\\right)',
     points: [
       'Wavelength and slit separation set the fringe spacing.',
@@ -140,7 +140,7 @@ export const TUTOR_CONTENT: Record<ModuleId, TutorContent> = {
       'Hands-on puzzles that validate your circuit against a target state or behaviour. Earn progress as you master each concept.',
     points: [
       'Build the requested state or transformation.',
-      'Use hints if you get stuck — they cost nothing.',
+      'Use hints if you get stuck - they cost nothing.',
       'Validation checks the actual statevector, not just the gates.',
     ],
     faqs: [

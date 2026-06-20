@@ -4,19 +4,19 @@ Welcome to Quosmos. This guide walks through every module. The golden rule: **to
 
 ## Getting around
 
-- **Sidebar** — switch modules, grouped into Foundations, Protocols, Algorithms and Learn.
-- **Workspace tabs** — each opened module gets a tab along the top; close with the ✕.
-- **Command palette** — press <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> to jump anywhere or run a command.
-- **Tutor** — the 🎓 button (top-right) opens a contextual explanation panel for the active module.
-- **Backend badge** — shows **Qiskit** when the Python backend is connected, otherwise **Local**.
-- **Undo / Redo** — <kbd>Ctrl Z</kbd> / <kbd>Ctrl Shift Z</kbd> across the circuit editor.
+- **Sidebar** - switch modules, grouped into Foundations, Protocols, Algorithms and Learn.
+- **Workspace tabs** - each opened module gets a tab along the top; close with the ✕.
+- **Command palette** - press <kbd>⌘K</kbd> / <kbd>Ctrl K</kbd> to jump anywhere or run a command.
+- **Tutor** - the 🎓 button (top-right) opens a contextual explanation panel for the active module.
+- **Backend badge** - shows **Qiskit** when the Python backend is connected, otherwise **Local**.
+- **Undo / Redo** - <kbd>Ctrl Z</kbd> / <kbd>Ctrl Shift Z</kbd> across the circuit editor.
 
 ## 1. Bloch Sphere Explorer 🪐
 
 A 3D single-qubit state on the unit sphere.
 
 - **Drag** to rotate, **scroll** to zoom, **right-drag** to pan.
-- Click **X, Y, Z, H, S, T** to apply a gate — the arrow animates to its new orientation.
+- Click **X, Y, Z, H, S, T** to apply a gate - the arrow animates to its new orientation.
 - Set the **rotation angle** slider, then apply **RX / RY / RZ** for arbitrary rotations.
 - The right panel shows probabilities, Bloch coordinates (x, y, z), θ/φ, amplitudes and the live state equation.
 - **Undo** the last gate, **reset** to |0⟩, or take a **screenshot** (📷).
@@ -63,7 +63,7 @@ Send two classical bits with one qubit.
 
 - Adjust **slit width**, **separation**, **wavelength** and **detector distance**.
 - Watch particles accumulate into an interference pattern; the intensity curve is overlaid.
-- Toggle **Which-path** observation mode to collapse the superposition — the fringes vanish.
+- Toggle **Which-path** observation mode to collapse the superposition - the fringes vanish.
 - Pause/resume the beam; read the fringe spacing Δy = λL/d.
 
 ## 8. Algorithms Gallery 🧠
@@ -78,7 +78,7 @@ Tabs for **Deutsch–Jozsa, Grover, QFT, Shor**.
 
 - A full topic browser plus an inline panel (🎓 button).
 - Each topic gives a summary, key equation, concept bullets and FAQs.
-- Ask a free-text question — answered locally, or via the backend if connected.
+- Ask a free-text question - answered locally, or via the backend if connected.
 
 ## 10. Quantum Challenges 🏆
 
@@ -92,4 +92,4 @@ Tabs for **Deutsch–Jozsa, Grover, QFT, Shor**.
 - **Export** downloads OpenQASM/Qiskit files.
 - **Screenshots** capture the 3D views as PNG.
 
-Everything persists locally between sessions — no account required.
+Everything persists locally between sessions - no account required.

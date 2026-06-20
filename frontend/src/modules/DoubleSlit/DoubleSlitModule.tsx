@@ -22,7 +22,7 @@ function intensity(y: number, p: Params): number {
   const beta = (Math.PI * p.slitWidth * sinT) / p.wavelength;
   const env = beta === 0 ? 1 : (Math.sin(beta) / beta) ** 2;
   if (p.observe) {
-    // incoherent: shift two single-slit envelopes by ±d/2 — no fringes
+    // incoherent: shift two single-slit envelopes by ±d/2 - no fringes
     const shift = (Math.PI * p.slitSep * sinT) / p.wavelength;
     return env * (1 + 0.0 * Math.cos(2 * shift)); // interference washed out
   }
@@ -101,7 +101,7 @@ export function DoubleSlitModule() {
       ctx.fillStyle = 'rgba(5,6,15,0.35)';
       ctx.fillRect(0, 0, W, H);
 
-      // wave field (left region) — animated phase ripples
+      // wave field (left region) - animated phase ripples
       const t = performance.now() / 600;
       for (let x = 0; x < W * 0.5; x += 6) {
         for (let y = 0; y < H; y += 6) {
@@ -182,7 +182,7 @@ export function DoubleSlitModule() {
           />
           <p className="mt-3 text-sm leading-relaxed text-slate-300">
             {params.observe
-              ? 'A which-path detector measures each particle. Superposition collapses — the fringes vanish and you see two broad bands.'
+              ? 'A which-path detector measures each particle. Superposition collapses - the fringes vanish and you see two broad bands.'
               : 'No measurement. Each particle interferes with itself, building up the characteristic interference fringes.'}
           </p>
         </Panel>

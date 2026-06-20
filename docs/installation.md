@@ -26,7 +26,7 @@ npm install
 npm run dev
 ```
 
-Open the printed URL (default <http://localhost:5173>). The app runs entirely on the built-in TypeScript quantum engine — **no backend required**.
+Open the printed URL (default <http://localhost:5173>). The app runs entirely on the built-in TypeScript quantum engine - **no backend required**.
 
 Production build:
 
@@ -54,11 +54,11 @@ uvicorn app.main:app --reload
 
 The API serves on <http://localhost:8000>. Interactive docs live at <http://localhost:8000/docs>.
 
-When the backend is up, the frontend auto-detects it (the badge in the top bar switches from **Local** to **Qiskit**). The Vite dev server proxies `/api` to port 8000 — no CORS configuration needed in development.
+When the backend is up, the frontend auto-detects it (the badge in the top bar switches from **Local** to **Qiskit**). The Vite dev server proxies `/api` to port 8000 - no CORS configuration needed in development.
 
 ## 3. Docker (full stack)
 
-If you have Docker with Compose, you can run everything with one command — no Node or Python setup needed:
+If you have Docker with Compose, you can run everything with one command - no Node or Python setup needed:
 
 ```bash
 docker compose up --build
@@ -94,8 +94,8 @@ QUOSMOS_CORS="https://quosmos.example.com" uvicorn app.main:app
 
 ## Troubleshooting
 
-- **`qiskit-aer` fails to build** — install a recent pip (`pip install -U pip`) and ensure you have build tools. The engine falls back to a NumPy simulator if Aer is missing, so tests still pass.
-- **Blank 3D view** — your browser/GPU may block WebGL. Try Chrome/Edge with hardware acceleration enabled.
-- **Port already in use** — change the frontend port with `npm run dev -- --port 5180`, or the backend with `uvicorn app.main:app --port 8010`.
+- **`qiskit-aer` fails to build** - install a recent pip (`pip install -U pip`) and ensure you have build tools. The engine falls back to a NumPy simulator if Aer is missing, so tests still pass.
+- **Blank 3D view** - your browser/GPU may block WebGL. Try Chrome/Edge with hardware acceleration enabled.
+- **Port already in use** - change the frontend port with `npm run dev -- --port 5180`, or the backend with `uvicorn app.main:app --port 8010`.
 
 Next: the [User Guide](user-guide.md).

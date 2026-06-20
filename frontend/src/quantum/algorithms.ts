@@ -55,7 +55,7 @@ export function teleportation(): Circuit {
     op('H', [0], 3),
     op('M', [0], 4),
     op('M', [1], 4),
-    // corrections on qubit 2 (controlled classically — modelled as CX/CZ)
+    // corrections on qubit 2 (controlled classically - modelled as CX/CZ)
     op('CX', [1, 2], 5),
     op('CZ', [0, 2], 6),
   ];
@@ -141,7 +141,7 @@ export const ALGORITHM_STEPS: Record<string, AlgorithmStep[]> = {
   grover: [
     { title: 'Superposition', description: 'Hadamards create a uniform superposition over all states.', math: '|s\\rangle = \\frac{1}{\\sqrt N}\\sum_x |x\\rangle', highlightColumns: [0] },
     { title: 'Oracle', description: 'Flip the phase of the marked state |11⟩.', math: 'U_\\omega|x\\rangle = (-1)^{[x=\\omega]}|x\\rangle', highlightColumns: [1] },
-    { title: 'Diffusion', description: 'Reflect about the mean — amplifies the marked amplitude.', math: '2|s\\rangle\\langle s| - I', highlightColumns: [2, 3, 4] },
+    { title: 'Diffusion', description: 'Reflect about the mean - amplifies the marked amplitude.', math: '2|s\\rangle\\langle s| - I', highlightColumns: [2, 3, 4] },
     { title: 'Measure', description: 'Marked state now dominates the distribution.', math: 'P(\\omega) \\approx \\sin^2((2t+1)\\theta)', highlightColumns: [6] },
   ],
   qft: [

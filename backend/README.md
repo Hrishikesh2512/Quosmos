@@ -1,6 +1,6 @@
 # Quosmos Backend
 
-FastAPI + Qiskit quantum engine for the Quosmos platform. Optional — the frontend works standalone — but it provides Qiskit-verified simulation, OpenQASM import, algorithm runs, and the tutor API.
+FastAPI + Qiskit quantum engine for the Quosmos platform. Optional - the frontend works standalone - but it provides Qiskit-verified simulation, OpenQASM import, algorithm runs, and the tutor API.
 
 ## Run
 

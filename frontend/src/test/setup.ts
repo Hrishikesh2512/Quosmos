@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-// jsdom does not implement WebGL / canvas — stub what Three.js touches so that
+// jsdom does not implement WebGL / canvas - stub what Three.js touches so that
 // component smoke tests can mount without a real GL context.
 if (typeof HTMLCanvasElement !== 'undefined') {
   HTMLCanvasElement.prototype.getContext = (() => null) as never;
