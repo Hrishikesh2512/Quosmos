@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --grid: rgba(124, 138, 255, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  @apply bg-void text-slate-200 font-sans antialiased;
+  background-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124, 138, 255, 0.12), transparent),
+    radial-gradient(900px 500px at -10% 110%, rgba(34, 211, 238, 0.1), transparent),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/10 bg-white/[0.035] backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-white/10 bg-white/[0.06] backdrop-blur-2xl;
+  }
+  .panel {
+    @apply glass rounded-2xl shadow-xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-3.5 py-2 text-sm font-medium
+      transition-all duration-150 select-none;
+  }
+  .btn-ghost {
+    @apply btn text-slate-300 hover:bg-white/5 hover:text-white;
+  }
+  .btn-primary {
+    @apply btn bg-nebula-500/90 text-white hover:bg-nebula-400 shadow-glow;
+  }
+  .btn-outline {
+    @apply btn border border-white/15 text-slate-200 hover:bg-white/5;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1
+      text-xs font-medium text-slate-300;
+  }
+  .gate-tile {
+    @apply flex h-10 w-10 items-center justify-center rounded-lg font-mono text-sm font-semibold
+      text-white shadow-md transition-transform hover:scale-105 active:scale-95;
+  }
+  .label {
+    @apply text-xs font-medium uppercase tracking-wider text-slate-400;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-white/10;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-quantum-violet via-nebula-300 to-quantum-cyan bg-clip-text text-transparent;
+  }
+  .mono {
+    @apply font-mono;
+  }
+}
+
+.katex {
+  font-size: 1.02em;
+}
