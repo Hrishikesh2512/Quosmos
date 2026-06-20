@@ -37,6 +37,16 @@ It feels like Figma + Notion + high-end scientific software — built as an open
 
 ## Quick start
 
+### Option A — Docker (full stack, one command)
+
+```bash
+docker compose up --build      # then open http://localhost:8080
+```
+
+This builds and runs the nginx-served frontend (port 8080) and the Qiskit backend (port 8000), wired together automatically.
+
+### Option B — local dev
+
 ```bash
 # 1. Frontend
 cd frontend
@@ -52,6 +62,12 @@ uvicorn app.main:app --reload    # http://localhost:8000
 ```
 
 The frontend is fully functional on its own thanks to the built-in TypeScript quantum engine. The backend unlocks Qiskit-verified simulation, QASM round-tripping, and the tutor API.
+
+## Deployment
+
+- **Docker Compose** — `docker compose up --build` runs the whole stack (see `docker-compose.yml`).
+- **Frontend static hosting** — deploy `frontend/` to Vercel (config in `frontend/vercel.json`) or any static host. The app runs standalone on its built-in engine; point it at a backend by serving the API under `/api`.
+- **Backend** — the `backend/Dockerfile` produces a self-contained Qiskit API image.
 
 ## Documentation
 

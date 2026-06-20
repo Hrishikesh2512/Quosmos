@@ -1,0 +1,24 @@
+# Quosmos full-stack — one command to run frontend + Qiskit backend.
+#   docker compose up --build
+# Then open http://localhost:8080
+services:
+  backend:
+    build: ./backend
+    image: quosmos-backend:latest
+    environment:
+      # Allow the nginx-served frontend origin.
+      QUOSMOS_CORS: "http://localhost:8080,http://127.0.0.1:8080"
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    image: quosmos-frontend:latest
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -56,6 +56,30 @@ The API serves on <http://localhost:8000>. Interactive docs live at <http://loca
 
 When the backend is up, the frontend auto-detects it (the badge in the top bar switches from **Local** to **Qiskit**). The Vite dev server proxies `/api` to port 8000 — no CORS configuration needed in development.
 
+## 3. Docker (full stack)
+
+If you have Docker with Compose, you can run everything with one command — no Node or Python setup needed:
+
+```bash
+docker compose up --build
+```
+
+- Frontend (nginx): <http://localhost:8080>
+- Backend (Qiskit API): <http://localhost:8000> · docs at `/docs`
+
+The frontend container reverse-proxies `/api` to the backend container, so the app reports **Qiskit** in the top bar out of the box. Stop with `docker compose down`.
+
+Build images individually if you prefer:
+
+```bash
+docker build -t quosmos-backend ./backend
+docker build -t quosmos-frontend ./frontend
+```
+
+## Deploying the frontend to Vercel
+
+The frontend is a static Vite build and works standalone (built-in engine). `frontend/vercel.json` configures the build and SPA routing. In the Vercel dashboard set the **Root Directory** to `frontend`; everything else is inferred. To connect a backend, host the API and route `/api` to it.
+
 ## Configuration
 
 | Variable | Where | Default | Purpose |
