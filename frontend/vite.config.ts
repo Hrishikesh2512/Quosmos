@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react';
 import path from 'node:path';
 
 export default defineConfig({
+  // Base path is '/' for local/Docker/Vercel and overridden to '/Quosmos/'
+  // by the GitHub Pages workflow via VITE_BASE.
+  base: process.env.VITE_BASE || '/',
   plugins: [react()],
   resolve: {
     alias: {

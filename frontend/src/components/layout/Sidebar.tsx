@@ -19,7 +19,7 @@ export function Sidebar() {
       )}
     >
       <div className="flex items-center gap-2 px-4 py-4">
-        <img src="/quosmos.svg" alt="" className="h-8 w-8 animate-float" />
+        <img src={`${import.meta.env.BASE_URL}quosmos.svg`} alt="" className="h-8 w-8 animate-float" />
         {!sidebarCollapsed && (
           <div className="leading-tight">
             <div className="text-base font-bold text-gradient">Quosmos</div>
